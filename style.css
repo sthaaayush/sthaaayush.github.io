@@ -6,17 +6,19 @@ body {
     background: radial-gradient(at right top, #031A72, #5880E8);
 }
 
-/* Navbar style */
+/* .navbarbar style */
 header {
     background-color: #27d8df;
     padding: 20px;
-    height: 30px;
-    width: 99%;
+    height: 40px;
+    width: 98%;
     position: fixed;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav ul {
+.dropdown-content {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,7 +26,11 @@ nav ul {
     float: inline-end;
 }
 
-nav ul li a {
+.dropbtn{
+    visibility: hidden;
+}
+
+.dropdown-content a {
     color: black;
     font-weight: bolder;
     text-decoration: none;
@@ -32,7 +38,7 @@ nav ul li a {
 }
 
 
-nav ul li a:hover {
+.dropdown-content a:hover {
     text-shadow: 2px 2px 2px rgb(52, 30, 180);
     font-weight: 900;
     color: white;
@@ -63,15 +69,11 @@ nav ul li a:hover {
 
 /* Body style */
 
-section {
-    padding: 40px;
-}
-
 
 .bodyContainer {
     position: relative;
     top: 70px;
-    
+
 }
 
 #home {
@@ -104,7 +106,7 @@ section {
     height: 400px;
 }
 
-#skills{
+#skills {
     height: 35em;
 }
 
@@ -114,6 +116,7 @@ section {
     height: 27em;
     overflow: hidden;
 }
+
 .flip-box {
     background-color: transparent;
     width: 300px;
@@ -153,7 +156,8 @@ section {
 }
 
 .flip-box-back {
-    background-color: #555;
+    background: #9BC5D1;
+    background: radial-gradient(at left center, #9BC5D1, #2B8AE0);
     color: white;
     transform: rotateY(180deg);
 }
@@ -162,18 +166,27 @@ section {
 
 #projects {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
-
-#contact {
-    display: flex;
-    justify-content: space-around;
-}
-
 /* End of body style */
 footer {
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
     padding: 20px;
-    text-align: center;
+    text-align: start;
     color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p a{
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }

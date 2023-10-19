@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="titleIcon.png">
+    <link rel="stylesheet" href="styleForMobile.css">
+    <link rel="icon" href="imgs/titleIcon.png">
     <title>Aayush Shrestha</title>
 </head>
 
@@ -15,15 +16,20 @@
             <img src="imgs/profilePic.png" alt="aayush">
             <h4>Aayush Shrestha</h4>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">&#9776;|
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Project</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div> 
+        </div>
     </header>
     <div class="bodyContainer">
         <section id="home">
@@ -72,10 +78,14 @@
                         </div>
                         <div class="flip-box-back">
                             <h2>JAVA</h2>
-                            <p>My expertise encompasses object-oriented programming, data structures, and algorithms, allowing me to create 
-                                efficient and maintainable software. I excel in exception handling, multithreading, and the Java Collections 
-                                Framework, making me adept at building high-performance applications. My knowledge of JVM, memory management, 
-                                and unit testing ensures that my Java applications are not only functional but also reliable and scalable. </p>
+                            <p>My expertise encompasses object-oriented programming, data structures, and algorithms,
+                                allowing me to create
+                                efficient and maintainable software. I excel in exception handling, multithreading, and
+                                the Java Collections
+                                Framework, making me adept at building high-performance applications. My knowledge of
+                                JVM, memory management,
+                                and unit testing ensures that my Java applications are not only functional but also
+                                reliable and scalable. </p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +97,12 @@
                         </div>
                         <div class="flip-box-back">
                             <h2>Swing</h2>
-                            <p>What an amazing city</p>
+                            <p>I have a deep-rooted expertise in Swing, which enables me to design intuitive and
+                                user-friendly graphical interfaces for Java applications. My proficiency in Swing,
+                                coupled with my strong foundation in Core Java, allows me to create visually appealing
+                                and interactive desktop applications.I take pride in crafting interfaces that not only
+                                look great but also provide a seamless and enjoyable user experience, ensuring that the
+                                software I develop is both functional and user-centric.</p>
                         </div>
                     </div>
                 </div>
@@ -99,7 +114,12 @@
                         </div>
                         <div class="flip-box-back">
                             <h2>JDBC</h2>
-                            <p>What an amazing city</p>
+                            <p>My proficiency in JDBC empowers me to establish robust connections with databases,
+                                providing the backbone for data-driven applications. I am well-versed in writing
+                                efficient SQL queries, handling database transactions, and optimizing database
+                                interactions to ensure the smooth and secure flow of data between Java applications and
+                                backend databases.This knowledge enables me to create applications that can seamlessly
+                                store, retrieve, and manipulate data, making them reliable and efficient. </p>
                         </div>
                     </div>
                 </div>
@@ -118,14 +138,21 @@
     </section>
     <hr>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: example@example.com</p>
-        <p>Phone: +1 123 456 789</p>
-    </section>
     </div>
     <footer>
-        <p>&copy; 2022 Your Name. All rights reserved.</p>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><a href="mailto:aayushshrestha20@gmail.com" class="mail"><img src="imgs/icons-gmail.png" alt="mail">Mail me</a></p>
+            <p><a><img src="imgs/icons-phone.png" alt="call">9800000000</a></p>
+            <p></p>
+        </section>
+        <section class="socialHandles">
+            <h2>Social Handles</h2>
+            <p><a href="https://www.instagram.com/stha_as/"><img src="imgs/icons-instagram.png" alt="insta"> Instagram </a></p>
+            <p><a><img src="imgs/icons-facebook.png" alt="fb">Facebook</a></p>
+            <p><a href="https://github.com/sthaaayush"><img src="imgs/icons-github.png" alt="git">Github</a></p>
+            <p><a href="https://www.linkedin.com/in/aayush-shrestha-b56573211/"><img src="imgs/icons-linkedin.png" alt="ln">Linkden</a></p>
+        </section>
     </footer>
 </body>
 
