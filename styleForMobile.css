@@ -1,7 +1,7 @@
 @media only screen and (max-width: 500px) {
     body {
-        background-color: rgb(240, 19, 19);
-        background: radial-gradient(at right top, #54830a, #58e86b);
+        background-color: rgb(58, 47, 216);
+        background: radial-gradient(at right top, #60d4e4, #4231a1);
     }
     *{
         font-family: 'Courier New', Courier, monospace;
