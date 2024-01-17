@@ -60,6 +60,8 @@ h2, h3 {
 
 h3 {
     margin-top: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 a {
