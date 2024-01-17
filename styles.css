@@ -90,3 +90,34 @@ a:hover {
         height: 80px; /* Adjust size for mobile */
     }
 }
+
+/* ... previous styles ... */
+
+.project-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
+    padding: 20px;
+    margin-bottom: 20px; /* Add space between cards */
+}
+
+.project-card h3 {
+    color: #343a40; /* Darker text color for card titles */
+}
+
+.project-card p {
+    color: #555; /* Slightly faded text color for descriptions */
+}
+
+.project-card a {
+    display: block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* ... media queries ... */
