@@ -15,13 +15,33 @@
     <nav class="bg-gray-600 p-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Aayush Shrestha</h1>
-            <ul class="flex space-x-6">
+            
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <ul id="menuLinks" class="hidden lg:flex space-x-6">
                 <li><a href="#about" class="hover:text-blue-400">About</a></li>
                 <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
                 <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
                 <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
                 <li><a href="certificate.html" class="hover:text-blue-400">Certificates</a></li>
             </ul>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobileMenu" class="lg:hidden hidden absolute top-16 left-0 bg-gray-600 w-full p-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="#about" class="text-white hover:text-blue-400">About</a></li>
+                    <li><a href="#skills" class="text-white hover:text-blue-400">Skills</a></li>
+                    <li><a href="#projects" class="text-white hover:text-blue-400">Projects</a></li>
+                    <li><a href="#contact" class="text-white hover:text-blue-400">Contact</a></li>
+                    <li><a href="certificate.html" class="text-white hover:text-blue-400">Certificates</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 

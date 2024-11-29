@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+
 </head>
 
 <body class="bg-gray-900 text-white font-roboto">
@@ -16,13 +17,33 @@
     <nav class="bg-gray-600 p-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Aayush Shrestha</h1>
-            <ul class="flex space-x-8">
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button id="menuButton" class="text-white focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+
+            <!-- Menu Links (Desktop) -->
+            <ul id="menuLinks" class="hidden lg:flex space-x-6">
                 <li><a href="index.html#about" class="hover:text-blue-400">About</a></li>
                 <li><a href="index.html#skills" class="hover:text-blue-400">Skills</a></li>
                 <li><a href="index.html#projects" class="hover:text-blue-400">Projects</a></li>
                 <li><a href="index.html#contact" class="hover:text-blue-400">Contact</a></li>
                 <li><a href="certificate.html" class="hover:text-blue-400">Certificates</a></li>
             </ul>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobileMenu" class="lg:hidden hidden absolute top-16 left-0 bg-gray-600 w-full p-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="index.html#about" class="hover:text-blue-400">About</a></li>
+                    <li><a href="index.html#skills" class="hover:text-blue-400">Skills</a></li>
+                    <li><a href="index.html#projects" class="hover:text-blue-400">Projects</a></li>
+                    <li><a href="index.html#contact" class="hover:text-blue-400">Contact</a></li>
+                    <li><a href="certificate.html" class="hover:text-blue-400">Certificates</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -32,7 +53,8 @@
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- Certificate 1 -->
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <img src="certificate1-thumbnail.jpg" alt="Introduction to Software Testing" class="rounded-lg mb-4" />
+                <img src="certificate_img/certificate1-thumbnail.jpg" alt="Introduction to Software Testing"
+                    class="rounded-lg mb-4" />
                 <h3 class="text-xl font-semibold">
                     Introduction to Software Testing
                 </h3>
@@ -40,55 +62,58 @@
                     Learned the fundamental principles and techniques for software
                     testing, including manual and automated testing methods.
                 </p>
-                <a href="https://your-certificates-link.com/software-testing" class="text-blue-400 hover:underline">View
+                <a href="https://simpli-web.app.link/e/hOROO7afVOb" class="text-blue-400 hover:underline">View
                     Certificate</a>
             </div>
 
             <!-- Certificate 2 -->
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <img src="certificate2-thumbnail.jpg" alt="Java Servlet & JSP 101" class="rounded-lg mb-4" />
+                <img src="certificate_img/certificate2-thumbnail.jpg" alt="Java Servlet & JSP 101"
+                    class="rounded-lg mb-4" />
                 <h3 class="text-xl font-semibold">Java Servlet & JSP 101</h3>
                 <p class="text-gray-400">
                     Gained understanding of Java Servlets and JSP, focusing on dynamic
                     web application development.
                 </p>
-                <a href="https://your-certificates-link.com/java-servlet-jsp" class="text-blue-400 hover:underline">View
+                <a href="https://simpli-web.app.link/e/PjXY10hfVOb" class="text-blue-400 hover:underline">View
                     Certificate</a>
             </div>
 
             <!-- Certificate 3 -->
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <img src="certificate3-thumbnail.jpg" alt="Python Django" class="rounded-lg mb-4" />
+                <img src="certificate_img/certificate3-thumbnail.jpg" alt="Python Django" class="rounded-lg mb-4" />
                 <h3 class="text-xl font-semibold">Python Django</h3>
                 <p class="text-gray-400">
                     Mastered Django web framework in Python for building scalable web
                     applications and APIs.
                 </p>
-                <a href="https://your-certificates-link.com/python-django" class="text-blue-400 hover:underline">View
+                <a href="https://simpli-web.app.link/e/snItDFvfVOb" class="text-blue-400 hover:underline">View
                     Certificate</a>
             </div>
 
             <!-- Certificate 4 -->
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <img src="certificate4-thumbnail.jpg" alt="Python for Beginner" class="rounded-lg mb-4" />
+                <img src="certificate_img/certificate4-thumbnail.jpg" alt="Python for Beginner"
+                    class="rounded-lg mb-4" />
                 <h3 class="text-xl font-semibold">Python for Beginner</h3>
                 <p class="text-gray-400">
                     Completed a foundational course in Python programming, covering
                     basic syntax, data structures, and algorithms.
                 </p>
-                <a href="https://your-certificates-link.com/python-beginner" class="text-blue-400 hover:underline">View
+                <a href="https://simpli-web.app.link/e/yrMVo7BfVOb" class="text-blue-400 hover:underline">View
                     Certificate</a>
             </div>
 
             <!-- Certificate 5 -->
             <div class="bg-gray-800 p-4 rounded-lg shadow-md">
-                <img src="certificate5-thumbnail.jpg" alt="Git & GitHub Markdown" class="rounded-lg mb-4" />
+                <img src="certificate_img/certificate5-thumbnail.jpg" alt="Git & GitHub Markdown"
+                    class="rounded-lg mb-4" />
                 <h3 class="text-xl font-semibold">Git & GitHub Markdown</h3>
                 <p class="text-gray-400">
                     Gained knowledge in version control with Git and GitHub, and learned
                     to document projects using Markdown.
                 </p>
-                <a href="https://your-certificates-link.com/git-github-markdown"
+                <a href="https://www.udemy.com/certificate/UC-a90eaecf-509f-4c88-b721-43556f58a892/"
                     class="text-blue-400 hover:underline">View Certificate</a>
             </div>
 
@@ -165,14 +190,18 @@
     <!-- Footer -->
     <footer class="text-center bg-gray-800 p-4">
         <div class="flex justify-center space-x-4">
-            <a href="https://github.com/sthaaayush" class="text-gray-400 hover:text-white"><i data-feather="github"></i></a>
-            <a href="www.linkedin.com/in/aayush-shrestha-b56573211" class="text-blue-400 hover:text-white"><i data-feather="linkedin"></i></a>
-            <a href="https://www.instagram.com/stha_as/" class="text-pink-400 hover:text-white"><i data-feather="instagram"></i></a>
+            <a href="https://github.com/sthaaayush" class="text-gray-400 hover:text-white"><i
+                    data-feather="github"></i></a>
+            <a href="www.linkedin.com/in/aayush-shrestha-b56573211" class="text-blue-400 hover:text-white"><i
+                    data-feather="linkedin"></i></a>
+            <a href="https://www.instagram.com/stha_as/" class="text-pink-400 hover:text-white"><i
+                    data-feather="instagram"></i></a>
         </div>
     </footer>
     <script>
         feather.replace();
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
