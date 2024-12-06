@@ -15,7 +15,7 @@
     <nav class="bg-gray-600 p-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Aayush Shrestha</h1>
-            
+
             <!-- Mobile Menu Button -->
             <div class="lg:hidden">
                 <button id="menuButton" class="text-white focus:outline-none">
@@ -53,15 +53,14 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <di68>
                     <img src="profile-picture.png" alt="Profile Picture" class="rounded-full w-49 h-54 mx-auto">
-                </di68
-                <div class="md:col-span-2">
-                    <p class="text-gray-300" style="font-size: larger;">
-                        Self-taught software developer with expertise in Java, backend development, and database
-                        management. Passionate about tech event organizing, including hackathons, and constantly
-                        upskilling in advanced tools like Maven, Spring Boot, and Django. Aiming to contribute to
-                        impactful projects while exploring modern tech stacks.
-                    </p>
-                </div>
+                </di68 <div class="md:col-span-2">
+                <p class="text-gray-300" style="font-size: larger;">
+                    Self-taught software developer with expertise in Java, backend development, and database
+                    management. Passionate about tech event organizing, including hackathons, and constantly
+                    upskilling in advanced tools like Maven, Spring Boot, and Django. Aiming to contribute to
+                    impactful projects while exploring modern tech stacks.
+                </p>
+            </div>
             </div>
         </section>
 
@@ -69,11 +68,18 @@
         <section class="mb-8">
             <div class="flex items-center justify-between bg-gray-800 p-4 rounded-lg">
                 <span class="text-lg">Download my CV</span>
-                <button 
-                    onclick="downloadCV()" 
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Download
-                </button>
+                <span class="text-lg">
+
+                    <button onclick="downloadCV()"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Download
+                    </button>
+                    &nbsp &nbsp
+                    <button onclick="window.location.href='Aayush_CV.pdf';"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        View
+                    </button>
+                </span>
             </div>
         </section>
 
@@ -222,7 +228,8 @@
                     <div class="p-4">
                         <h3 class="text-xl font-bold mb-2">Esathi Project</h3>
                         <p class="text-gray-300 mb-4">
-                            Esathi is a social media project developed with objectives of creating a safe online platform with anonymous users
+                            Esathi is a social media project developed with objectives of creating a safe online
+                            platform with anonymous users
                         </p>
                         <a href="https://github.com/sthaaayush/Esathi" target="_blank"
                             class="text-blue-500 hover:underline">
